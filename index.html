@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Arms Village | SSB & Defence Exam Preparation</title>
+  <meta name="description" content="Current affairs and general awareness study resources for SSB and defence exam preparation.">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #17202b;
+      background: #f4f7f5;
+      line-height: 1.6;
+    }
+    header { background: #123b2b; color: white; padding: 22px 7%; }
+    header h1 { margin: 0; }
+    nav { margin-top: 12px; display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: white; text-decoration: none; }
+    .hero { padding: 64px 7%; background: #e4eee8; }
+    .hero h2 { font-size: clamp(2rem, 5vw, 3.3rem); margin: 0 0 12px; }
+    .hero p { max-width: 650px; }
+    .button {
+      display: inline-block; padding: 11px 18px; margin: 8px 8px 0 0;
+      background: #17633f; color: white; border-radius: 7px; text-decoration: none;
+    }
+    main { max-width: 1100px; margin: auto; padding: 30px 20px 60px; }
+    .section-title { margin-top: 32px; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 16px; }
+    .card { background: white; border: 1px solid #dce5df; border-radius: 10px; padding: 18px; }
+    .card h3 { margin-top: 0; }
+    .pdf-list { display: grid; gap: 14px; }
+    .pdf-card { display: flex; justify-content: space-between; align-items: center; gap: 16px; }
+    .pdf-card p { margin: 4px 0 0; color: #58665e; }
+    .small { color: #58665e; font-size: .92rem; }
+    footer { background: #123b2b; color: white; padding: 24px 7%; }
+    footer a { color: white; }
+    @media (max-width: 600px) {
+      .pdf-card { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Arms Village</h1>
+    <nav aria-label="Main navigation">
+      <a href="#categories">Categories</a>
+      <a href="#latest">Latest PDFs</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2>Prepare with confidence.</h2>
+    <p>Current affairs and general awareness resources for SSB and defence exam preparation. Browse study materials by topic and access PDFs in one place.</p>
+    <a class="button" href="#latest">Browse latest PDFs</a>
+    <a class="button" href="#categories">Browse categories</a>
+  </section>
+
+  <main>
+    <section id="categories">
+      <h2 class="section-title">Browse by category</h2>
+      <div class="grid">
+        <article class="card"><h3>Monthly Current Affairs</h3><p>Important events and updates organized by month.</p></article>
+        <article class="card"><h3>Defence News</h3><p>Updates related to India's defence and armed forces.</p></article>
+        <article class="card"><h3>National Affairs</h3><p>Key national events, government initiatives, and policies.</p></article>
+        <article class="card"><h3>International Affairs</h3><p>World events and international relations.</p></article>
+        <article class="card"><h3>Science & Technology</h3><p>Notable developments in science, space, and technology.</p></article>
+        <article class="card"><h3>Sports & General Awareness</h3><p>Sports updates and useful general knowledge.</p></article>
+      </div>
+    </section>
+
+    <section id="latest">
+      <h2 class="section-title">Latest PDFs</h2>
+      <p class="small">Sample entries below—replace these links with your own PDF files before sharing the site.</p>
+      <div class="pdf-list">
+        <article class="card pdf-card">
+          <div><h3>Sample: Monthly Current Affairs</h3><p>Replace with your month, year, and a short description.</p></div>
+          <a class="button" href="pdfs/sample-current-affairs.pdf">View / Download PDF</a>
+        </article>
+        <article class="card pdf-card">
+          <div><h3>Sample: Defence News Digest</h3><p>Replace with your date and summary.</p></div>
+          <a class="button" href="pdfs/sample-defence-news.pdf">View / Download PDF</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="about">
+      <h2 class="section-title">About Arms Village</h2>
+      <p>This website collects educational resources for candidates preparing for SSB and defence examinations. Add your own introduction here.</p>
+    </section>
+
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p>For questions or corrections, contact: <a href="mailto:your-email@example.com">your-email@example.com</a> (replace with your email).</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Educational resource only. Please verify important or changing information with original sources.</p>
+    <p>© <span id="year"></span> Arms Village</p>
+  </footer>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
